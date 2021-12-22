@@ -9,10 +9,10 @@
 import UIKit
 
 public extension Bundle {
-    public var releaseVersionNumber: String? {
+    var releaseVersionNumber: String? {
         return infoDictionary?["CFBundleShortVersionString"] as? String
     }
-    public var buildVersionNumber: String? {
+    var buildVersionNumber: String? {
         return infoDictionary?["CFBundleVersion"] as? String
     }
 }

@@ -5,7 +5,7 @@ public extension Int {
     
     // vorischt vorsicht..... immer SEKONDS NEHMEN. Wir wissen, dass bei presence millisenkonds stehen.
   
-    public var online:Bool {
+    var online:Bool {
          let dateString_double = Double(self)
          var dateString_ti = TimeInterval(dateString_double)
         
@@ -28,7 +28,7 @@ public extension Int {
          return diff < 60 ? true : false
     }
   
-    public func timePassedSince(lang:String) -> String {
+    func timePassedSince(lang:String) -> String {
          let dateString_double = Double(self)
          var dateString_ti = TimeInterval(dateString_double)
         
@@ -126,7 +126,7 @@ public extension Int {
 
 public extension Int {
     
-    public func timeStampToDate() -> Date {
+    func timeStampToDate() -> Date {
         return Date(timeIntervalSince1970: Double(self))
     }
     

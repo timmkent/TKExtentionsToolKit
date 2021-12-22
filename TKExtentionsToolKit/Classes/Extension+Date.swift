@@ -9,7 +9,7 @@
 import Foundation
 
 
-extension Date {
+public extension Date {
     
     init(fromYYYYMMDD string:String) {
         let df = DateFormatter()

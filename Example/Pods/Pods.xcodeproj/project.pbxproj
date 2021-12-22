@@ -73,7 +73,7 @@
 		EE1E0C7DA10A9F320554B4FD976056F4 /* TKExtentionsToolKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TKExtentionsToolKit-dummy.m"; sourceTree = "<group>"; };
 		FB8FB04E45079702FE3713A44A72C0E6 /* Pods-TKExtentionsToolKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TKExtentionsToolKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FBB92763E1A0123A405C2E9F0C3DDFE5 /* Pods-TKExtentionsToolKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TKExtentionsToolKit_Example-dummy.m"; sourceTree = "<group>"; };
-		FE9A873E436EE8A98AEDD0BE75FBE984 /* Pods-TKExtentionsToolKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TKExtentionsToolKit_Tests"; path = Pods_TKExtentionsToolKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9A873E436EE8A98AEDD0BE75FBE984 /* Pods_TKExtentionsToolKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKExtentionsToolKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				6C8E9D64C44A72AEE12DC24C32216B03 /* Pods_TKExtentionsToolKit_Example.framework */,
-				FE9A873E436EE8A98AEDD0BE75FBE984 /* Pods-TKExtentionsToolKit_Tests */,
+				FE9A873E436EE8A98AEDD0BE75FBE984 /* Pods_TKExtentionsToolKit_Tests.framework */,
 				A24ABBB4B7E188D94E1CAF903EECBA7D /* TKExtentionsToolKit.framework */,
 			);
 			name = Products;
@@ -312,7 +312,7 @@
 			);
 			name = "Pods-TKExtentionsToolKit_Tests";
 			productName = Pods_TKExtentionsToolKit_Tests;
-			productReference = FE9A873E436EE8A98AEDD0BE75FBE984 /* Pods-TKExtentionsToolKit_Tests */;
+			productReference = FE9A873E436EE8A98AEDD0BE75FBE984 /* Pods_TKExtentionsToolKit_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -322,7 +322,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					0D0048E287A9A80CC651F2B2741BD2BB = {
 						LastSwiftMigration = 1320;
@@ -505,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -533,7 +533,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TKExtentionsToolKit/TKExtentionsToolKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TKExtentionsToolKit/TKExtentionsToolKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TKExtentionsToolKit/TKExtentionsToolKit.modulemap";
 				PRODUCT_MODULE_NAME = TKExtentionsToolKit;
@@ -564,7 +564,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TKExtentionsToolKit_Tests/Pods-TKExtentionsToolKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TKExtentionsToolKit_Tests/Pods-TKExtentionsToolKit_Tests.modulemap";
@@ -597,7 +597,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TKExtentionsToolKit_Tests/Pods-TKExtentionsToolKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TKExtentionsToolKit_Tests/Pods-TKExtentionsToolKit_Tests.modulemap";
@@ -629,7 +629,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TKExtentionsToolKit/TKExtentionsToolKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TKExtentionsToolKit/TKExtentionsToolKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TKExtentionsToolKit/TKExtentionsToolKit.modulemap";
 				PRODUCT_MODULE_NAME = TKExtentionsToolKit;
@@ -728,7 +728,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
