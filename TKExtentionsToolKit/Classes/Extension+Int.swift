@@ -1,11 +1,11 @@
 
 import Foundation
 
-extension Int {
+public extension Int {
     
     // vorischt vorsicht..... immer SEKONDS NEHMEN. Wir wissen, dass bei presence millisenkonds stehen.
   
-    var online:Bool {
+    public var online:Bool {
          let dateString_double = Double(self)
          var dateString_ti = TimeInterval(dateString_double)
         
@@ -28,7 +28,7 @@ extension Int {
          return diff < 60 ? true : false
     }
   
-    func timePassedSince(lang:String) -> String {
+    public func timePassedSince(lang:String) -> String {
          let dateString_double = Double(self)
          var dateString_ti = TimeInterval(dateString_double)
         
@@ -124,9 +124,9 @@ extension Int {
 
 }
 
-extension Int {
+extension public Int {
     
-    func timeStampToDate() -> Date {
+    public func timeStampToDate() -> Date {
         return Date(timeIntervalSince1970: Double(self))
     }
     
