@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Bundle {
+public extension Bundle {
     var releaseVersionNumber: String? {
         return infoDictionary?["CFBundleShortVersionString"] as? String
     }
