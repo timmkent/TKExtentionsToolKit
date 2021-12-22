@@ -1,0 +1,16 @@
+PODS:
+  - TKExtentionsToolKit (0.1.0)
+
+DEPENDENCIES:
+  - TKExtentionsToolKit (from `../`)
+
+EXTERNAL SOURCES:
+  TKExtentionsToolKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TKExtentionsToolKit: 7ed851ced908d70073ecdba487c8988ce4170832
+
+PODFILE CHECKSUM: fc1de2b1059e34d8429d4ed1d058ecc0081c6ca6
+
+COCOAPODS: 1.11.2

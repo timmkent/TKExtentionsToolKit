@@ -1,0 +1,6 @@
+framework module Pods_TKExtentionsToolKit_Example {
+  umbrella header "Pods-TKExtentionsToolKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
