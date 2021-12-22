@@ -124,7 +124,7 @@ public extension Int {
 
 }
 
-extension public Int {
+public extension Int {
     
     public func timeStampToDate() -> Date {
         return Date(timeIntervalSince1970: Double(self))
