@@ -18,12 +18,38 @@ public extension Date {
         self = df.date(from: string)!
     }
     
+    var thirtyDaysAgoYMD: String {
+        let today = Date().addingTimeInterval(-60*60*24*30)
+        let df = DateFormatter()
+        df.timeZone = TimeZone(abbreviation: "UTC")
+        df.calendar = Calendar(identifier: .gregorian)
+        df.dateFormat = "yyyy-MM-dd"
+        let date = df.string(from: today)
+        return date
+    }
+    func YMDNumberOfDaysAgo(_ days: Int) -> String {
+        let today = Date().addingTimeInterval(-60*60*24*Double(days))
+        let df = DateFormatter()
+        df.calendar = Calendar(identifier: .gregorian)
+        df.timeZone = TimeZone(abbreviation: "UTC")
+        df.dateFormat = "yyyy-MM-dd"
+        let date = df.string(from: today)
+        return date
+    }
     var timeIntervalSecondsSince1970:Int {
         let ti = Int(self.timeIntervalSince1970)
         return ti
     }
     
-    
+    var yesterdayYMD: String {
+        let today = Date().addingTimeInterval(-60*60*24)
+        let df = DateFormatter()
+        df.calendar = Calendar(identifier: .gregorian)
+        df.timeZone = TimeZone(abbreviation: "UTC")
+        df.dateFormat = "yyyy-MM-dd"
+        let date = df.string(from: today)
+        return date
+    }
     
     var todayYMD:String {
         let today = self
@@ -68,5 +94,6 @@ public extension Date {
         let age = ageComponents.year!
         return age
     }
+    
     
 }
