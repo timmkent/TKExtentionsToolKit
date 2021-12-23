@@ -13,6 +13,9 @@
 		6969F4BB82275CC9B1509CC5DDF9699C /* Pods-TKExtentionsToolKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E2818974C6E667A9A9175DD709F67E /* Pods-TKExtentionsToolKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CD35F104E8FC5E6EBFFEB876BD20ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		6DDF050CB506196053133A390781A848 /* TKExtentionsToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1E0C7DA10A9F320554B4FD976056F4 /* TKExtentionsToolKit-dummy.m */; };
+		6E33B9C62774A95D00832F78 /* Extension+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33B9C52774A95D00832F78 /* Extension+Encodable.swift */; };
+		6E33B9C92774A96A00832F78 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33B9C72774A96A00832F78 /* Extension+UIButton.swift */; };
+		6E33B9CA2774A96A00832F78 /* Extension+UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33B9C82774A96A00832F78 /* Extension+UIDevice.swift */; };
 		6EAE7C1F277373A5002CBE31 /* Extension+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE7C1E277373A5002CBE31 /* Extension+Bundle.swift */; };
 		6EAE7C21277373AE002CBE31 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE7C20277373AE002CBE31 /* Extension+Date.swift */; };
 		70A65585DFC091FA748D6B6E2CFAD3FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -50,6 +53,9 @@
 		495C1AE1DF502F12C217FA0981C6F3C3 /* TKExtentionsToolKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TKExtentionsToolKit.release.xcconfig; sourceTree = "<group>"; };
 		692822CE8F7F9B8AA119DA758BD00749 /* Pods-TKExtentionsToolKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TKExtentionsToolKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		6C8E9D64C44A72AEE12DC24C32216B03 /* Pods_TKExtentionsToolKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKExtentionsToolKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E33B9C52774A95D00832F78 /* Extension+Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension+Encodable.swift"; path = "TKExtentionsToolKit/Classes/Extension+Encodable.swift"; sourceTree = "<group>"; };
+		6E33B9C72774A96A00832F78 /* Extension+UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension+UIButton.swift"; path = "TKExtentionsToolKit/Classes/Extension+UIButton.swift"; sourceTree = "<group>"; };
+		6E33B9C82774A96A00832F78 /* Extension+UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension+UIDevice.swift"; path = "TKExtentionsToolKit/Classes/Extension+UIDevice.swift"; sourceTree = "<group>"; };
 		6EAE7C1E277373A5002CBE31 /* Extension+Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension+Bundle.swift"; path = "TKExtentionsToolKit/Classes/Extension+Bundle.swift"; sourceTree = "<group>"; };
 		6EAE7C20277373AE002CBE31 /* Extension+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension+Date.swift"; path = "TKExtentionsToolKit/Classes/Extension+Date.swift"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -108,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				6EAE7C1E277373A5002CBE31 /* Extension+Bundle.swift */,
+				6E33B9C52774A95D00832F78 /* Extension+Encodable.swift */,
+				6E33B9C72774A96A00832F78 /* Extension+UIButton.swift */,
+				6E33B9C82774A96A00832F78 /* Extension+UIDevice.swift */,
 				6EAE7C20277373AE002CBE31 /* Extension+Date.swift */,
 				A767065A87A7C6156CAFD33399C42D7A /* Extension+Int.swift */,
 				79FF2B84CBAC7E5226538AE6315C5291 /* Pod */,
@@ -394,10 +403,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E33B9CA2774A96A00832F78 /* Extension+UIDevice.swift in Sources */,
 				6EAE7C21277373AE002CBE31 /* Extension+Date.swift in Sources */,
 				D0A0C6092706B9C01F85B052C508F14C /* Extension+Int.swift in Sources */,
+				6E33B9C62774A95D00832F78 /* Extension+Encodable.swift in Sources */,
 				6EAE7C1F277373A5002CBE31 /* Extension+Bundle.swift in Sources */,
 				6DDF050CB506196053133A390781A848 /* TKExtentionsToolKit-dummy.m in Sources */,
+				6E33B9C92774A96A00832F78 /* Extension+UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
