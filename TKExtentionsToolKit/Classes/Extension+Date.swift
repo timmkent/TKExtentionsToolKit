@@ -13,6 +13,7 @@ public extension Date {
     
     init(fromYYYYMMDD string:String) {
         let df = DateFormatter()
+        df.calendar = Calendar(identifier: .gregorian)
         df.dateFormat = "yyyy-MM-dd"
         self = df.date(from: string)!
     }
@@ -28,12 +29,14 @@ public extension Date {
         let today = self
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd"
+        df.calendar = Calendar(identifier: .gregorian)
         let date = df.string(from: today)
         return date
     }
     var todayHHMM:String {
         let today = self
         let df = DateFormatter()
+        df.calendar = Calendar(identifier: .gregorian)
         df.dateFormat = "HH:mm"
         let date = df.string(from: today)
         return date
@@ -41,6 +44,7 @@ public extension Date {
     var toYYYMMDD:String {
         let today = self
         let df = DateFormatter()
+        df.calendar = Calendar(identifier: .gregorian)
         df.dateFormat = "yyyy-MM-dd"
         let date = df.string(from: today)
         return date
@@ -49,6 +53,7 @@ public extension Date {
     var toYYYMMDDforUTC:String {
         let today = self
         let df = DateFormatter()
+        df.calendar = Calendar(identifier: .gregorian)
         df.timeZone = TimeZone(abbreviation: "UTC")
         df.dateFormat = "yyyy-MM-dd"
         let date = df.string(from: today)
